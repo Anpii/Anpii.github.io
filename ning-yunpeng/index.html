@@ -41,6 +41,11 @@
     .about p { max-width:610px; margin:0; font-size:17px; line-height:1.85; }
     .research-list { display:flex; flex-wrap:wrap; gap:10px; list-style:none; padding:0; margin:0; }
     .research-list li { border:1px solid var(--line); padding:9px 14px; font-size:14px; line-height:1.5; }
+    .details-list { margin:0; padding-left:22px; font-size:16px; line-height:1.95; }
+    .details-list li + li { margin-top:10px; }
+    .section-body p + p { margin-top:18px; }
+    .section-body h3 { font-size:16px; margin:26px 0 14px; font-weight:600; }
+    .section-label { flex-wrap:wrap; }
     .role { font-size:16px; line-height:1.6; color:var(--muted); margin:10px 0 0; }
     .affiliation { color:var(--accent); font-size:16px; margin:20px 0 0; }
     .contact { background:#eaece3; border:1px solid #dee0d5; padding:31px 34px 32px; display:grid; grid-template-columns:210px minmax(0,1fr); gap:32px; }
@@ -99,18 +104,42 @@
           <div class="eyebrow">Personal homepage</div>
           <h1 id="name">Yunpeng Ning</h1>
           <p class="chinese-name" lang="zh-CN">宁昀鹏</p>
-          <p class="affiliation">Li Auto Inc.</p>
-          <p class="role">Director, Vehicle Control Department</p>
-          <p class="welcome">Welcome to my personal website.<br>Thank you for stopping by.</p>
+          <p class="affiliation">理想汽车 · Li Auto Inc.</p>
+          <p class="role"><span lang="zh-CN">车辆控制部门总监</span><br>Director, Vehicle Control Department</p>
+          <p class="welcome" lang="zh-CN">研究方向：车辆控制智能化与人工智能</p>
         </div>
         <div class="seal" aria-hidden="true"><span class="seal-letters">yn.</span><span class="seal-rule"></span><span class="seal-caption">Personal homepage</span></div>
       </section>
       <section id="about" class="about" aria-labelledby="about-title">
-        <h2 id="about-title" class="section-label"><span class="section-number" aria-hidden="true">01</span>About</h2>
-        <p>Hello, I'm Yunpeng Ning (<span lang="zh-CN">宁昀鹏</span>), Director of the Vehicle Control Department at Li Auto Inc. (<span lang="zh-CN">车辆控制部门总监</span>). Feel free to get in touch by email.</p>
+        <h2 id="about-title" class="section-label"><span class="section-number" aria-hidden="true">01</span>个人简介 · About</h2>
+        <p lang="zh-CN">宁昀鹏，理想汽车（Li Auto Inc.）车辆控制部门总监，研究方向为车辆控制智能化与人工智能。</p>
+      </section>
+      <section id="experience" class="about" aria-labelledby="experience-title">
+        <h2 id="experience-title" class="section-label"><span class="section-number" aria-hidden="true">02</span>工作经历 · Experience</h2>
+        <ul class="details-list" lang="zh-CN"><li>理想汽车自动充电机器人研发负责人</li><li>整车控制系统的研发负责人</li></ul>
+      </section>
+      <section id="research" class="about" aria-labelledby="research-title">
+        <h2 id="research-title" class="section-label"><span class="section-number" aria-hidden="true">03</span>研究方向 · Research</h2>
+        <ul class="research-list" lang="zh-CN"><li>车辆控制智能化</li><li>人工智能</li></ul>
+      </section>
+      <section id="achievements" class="about" aria-labelledby="achievements-title">
+        <h2 id="achievements-title" class="section-label"><span class="section-number" aria-hidden="true">04</span>科研成果 · Achievements</h2>
+        <div class="section-body" lang="zh-CN">
+          <p>近五年，主导了理想汽车全部车型控制系统研发，包括理想 ONE、理想 L 系列、理想 I 系列和 MEGA 车型；主持多项公司级重大科技创新项目，完成多件国家发明专利和研究性论文的发表。</p>
+          <h3>标志性成果 · Selected Patents</h3>
+          <ol class="details-list">
+            <li>马东辉、宁昀鹏，一种车辆控制方法及车辆，发明专利，2020。</li>
+            <li>马东辉、宁昀鹏，车辆的低压蓄电池充电控制方法、装置和车辆，发明专利，2019。</li>
+            <li>马东辉、宁昀鹏，对车辆进行个性化调节的方法、装置、系统和车辆，发明专利，2019。</li>
+          </ol>
+        </div>
+      </section>
+      <section id="project" class="about" aria-labelledby="project-title">
+        <h2 id="project-title" class="section-label"><span class="section-number" aria-hidden="true">05</span>项目任务 · Project Role</h2>
+        <p lang="zh-CN">本项目承担任务：控制算法与试验方案指导。</p>
       </section>
       <section id="contact" class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title" class="section-label"><span class="section-number" aria-hidden="true">02</span>Contact</h2>
+        <h2 id="contact-title" class="section-label"><span class="section-number" aria-hidden="true">06</span>Contact</h2>
         <div><p class="contact-note">Get in touch by email</p><div class="email-list"><a class="email" href="mailto:ningyunpeng@lixiang.com"><span class="email-text">ningyunpeng@lixiang.com</span><span class="email-arrow" aria-hidden="true">↗</span></a></div></div>
       </section>
     </main>
